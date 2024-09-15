@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
 
 app.use(expressSession({
-    secret: process.env.SECRET_KEY,
+    secret: "asdfghjklqwertyuiopzxcvbnmasdfghjkl",
     resave: false,
     saveUninitialized: false,
     cookie: {

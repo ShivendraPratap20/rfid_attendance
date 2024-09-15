@@ -6,7 +6,7 @@ const auth = async (req, res, next)=>{
         const token = req.cookies.JWT;
         if(token == null || token == undefined) res.render("home.hbs");
         else{
-            const verifyUser = await jwt.verify(token, process.env.SECRET_KEY);
+            const verifyUser = await jwt.verify(token, "asdfghjklqwertyuiopzxcvbnmasdfghjkl");
             const teacherData = await teacherSchema.findOne({_id:verifyUser._id});
             (teacherData != undefined || teacherData != null)? res.render("index.hbs", {data:teacherData}): res.render("home.hbs");
             req.token = token;
