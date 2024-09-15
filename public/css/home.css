@@ -1,0 +1,148 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+
+ @media screen and (min-width:900px) {
+    .container{
+        width:50%;
+        height:60vh;
+        display:flex;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    .intro{
+        width:50%;
+        background-color:#292C35;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family: "Archivo", sans-serif;
+    }
+    .intro div{
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    .intro img{
+        width:50%;
+        margin: 5px;
+    }
+    .intro div span{
+        color:#DCAE52;
+    }
+    
+    .login_box{
+        background-color: rgb(236, 237, 233);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 40px;
+        width: 400px;
+    }
+    .headText{
+        padding:25px;
+        color:#DCAE52;
+        font-weight: 400;
+        font-family: 'Archivo', sans-serif;
+     }
+    .emailTextBox, .passwordBox{
+        border: 2px solid #DCAE52;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 15px;
+        border-bottom-width: 4px;
+    }
+    button{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        background-color:#DCAE52;
+        color: white;
+        font-size: large;
+    }
+    
+     .emailTextBox,.passwordBox,button{
+        padding: 10px;
+     }
+     input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: black;
+        outline: none;
+     }
+ }
+ @media screen and (max-width:767px) {
+    .container{
+        width: 100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .container .intro{
+        width:100%;
+        background-color:#292c35;
+        padding:12px;
+    }
+     .intro div{
+         display:flex;
+         flex-direction:column;
+         align-items:center;
+         justify-content:center;
+     }
+     .intro img{
+         width:30%;
+     }
+     .login_box{
+          background-color: rgb(236, 237, 233);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 40px;
+         margin:10px 0;
+        width: 80%;
+     }
+     .headText{
+        padding:25px;
+        color:#DCAE52;
+        font-weight: 400;
+        font-family: 'Archivo', sans-serif;
+     }
+     .emailTextBox, .passwordBox{
+        border: 2px solid #DCAE52;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 15px;
+        border-bottom-width: 4px;
+    }
+    button{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        background-color:#DCAE52;
+        color: white;
+        font-size: large;
+    }
+    
+     .emailTextBox,.passwordBox,button{
+        padding: 10px;
+     }
+     input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: black;
+        outline: none;
+     }
+ }

@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:767px) {
+
+    /*For smartphonse*/
+    .main_box {
+        width: 100%;
+        padding: 10px;
+        background-color: #292C35;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Abel", sans-serif;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .main_box img {
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .text,
+    .iet {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .iet {
+        color: #DCAE52;
+        font-size: larger;
+        letter-spacing: 2px;
+    }
+
+    .letf_side {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #292C35;
+        margin: 10px 0px;
+        padding: 12px;
+    }
+
+    .letf_side .logo_container img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .letf_side div {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .letf_side div a {
+        text-decoration: none;
+        color: #dcae52;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .letf_side button {
+        border: none;
+        background-color: #202328;
+        color: white;
+        padding: 12px;
+        font-size: large;
+    }
+    .letf_side button a:hover{
+        background-color: black;
+        color:#DCA352
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        border-radius: 10px;
+        border: 2px solid #DCA352;
+        padding: 15px;
+    }
+
+    .card .info {
+        background-color: rgb(232, 228, 228);
+        width: 100%;
+        padding: 10px;
+        order: 2;
+        border-radius: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .main {
+        font-weight: bold;
+    }
+
+    table td {
+        padding: 5px;
+    }
+
+    .card .profile {
+        padding: 5px;
+        background-color: #292c35;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card .profile img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .year_box_container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 10px;
+        text-align: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        background-color: rgb(232, 228, 228);
+        color: black;
+    }
+
+    .year_box_container .year_box {
+        background-color: whitesmoke;
+        padding: 12px;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .notice_container {
+        background-color: rgb(232, 228, 228);
+        text-align: center;
+        width: 70%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        border-radius: 10px;
+        padding: 0 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notice_container .notice_head {
+        width: 100%;
+        text-align: center;
+        background-color: #292C35;
+        color: #DCAE52;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .notice_container .notice_block_container div {
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .notice_container .notice_block_container {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:900px) {
+
+    /*For tablet*/
+    .main_box {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #292C35;
+        color: whitesmoke;
+        font-family: "Abel", sans-serif;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .main_box img {
+        width: 80px;
+        height: 80px
+    }
+
+    .text,
+    .iet {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .iet {
+        color: #DCA352;
+        letter-spacing: 2px;
+        font-size: larger;
+    }
+
+    .page_container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto auto auto;
+        row-gap: 15px;
+        padding: 12px;
+    }
+
+    .letf_side {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 70vh;
+        width: 65%;
+        padding: 12px;
+        display: inline-block;
+        position: relative;
+        background-color: #292C35;
+        border-radius: 10px;
+    }
+
+    .letf_side .logo_container {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letf_side .logo_container img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: #DCAE52;
+        font-size: medium;
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-style: none;
+        padding: 10px;
+        background-color: #202328;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: #DCAE52;
+        font-size: medium;
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-style: none;
+        padding: 10px;
+        background-color: #202328;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+
+    .card {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: row;
+        color: black;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border: 2px solid #DCA352;
+        padding: 5px;
+        position: relative;
+        border-radius: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    table td {
+        padding: 5px;
+    }
+
+    .info {
+        padding: 0 10px 0 10px;
+        border-radius: 10px;
+        background-color: rgb(232, 228, 228);
+        width: 83%;
+    }
+
+    .main {
+        font-weight: bold;
+    }
+
+    .card .profile {
+        padding: 5px;
+        background-color: #292c35;
+        border-radius: 10px;
+        width: 15%;
+    }
+
+    .card .profile img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .year_box_container {
+        width: 100%;
+        display: grid;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+
+    .year_box {
+        background-color: rgb(232, 228, 228);
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .year_box .inner_year_box::before {
+        content: " ";
+        position: absolute;
+        background-color: #DCA352;
+        width: 5%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+
+    .notice_container {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: rgb(232, 228, 228);
+        text-align: center;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notice_container .notice_head {
+        width: 100%;
+        text-align: center;
+        background-color: #292C35;
+        color: #DCAE52;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .notice_container .notice_block_container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notice_container .notice_block_container div {
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+}
+
+@media screen and (min-width:900px) {
+    .main_box {
+        padding: 15px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: "Abel", sans-serif;
+        background-color: #292C35;
+        color: whitesmoke;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .main_box img {
+        width: 100px;
+        height: 100px;
+        margin-right: 15px;
+    }
+
+    .text {
+        padding: 2px;
+    }
+
+    .iet {
+        color: #DCAE52;
+        letter-spacing: 2px;
+        font-weight: bolder;
+    }
+
+    .page_container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: auto auto auto;
+        row-gap: 10px;
+        padding: 12px;
+    }
+
+    .letf_side {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 70vh;
+        width: 65%;
+        padding: 12px;
+        display: inline-block;
+        position: relative;
+        background-color: #292C35;
+        border-radius: 10px;
+    }
+
+    .letf_side .logo_container {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .letf_side .logo_container img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: #DCAE52;
+        font-size: medium;
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-style: none;
+        padding: 10px;
+        background-color: #202328;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        color: #DCAE52;
+        font-size: medium;
+    }
+
+    button {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-style: none;
+        padding: 10px;
+        background-color: #202328;
+        color: white;
+        font-size: large;
+        border-radius: 10px;
+    }
+
+    .card {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        display: flex;
+        flex-direction: row;
+        color: black;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border: 2px solid #DCA352;
+        padding: 5px;
+        position: relative;
+        border-radius: 10px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    table td {
+        padding: 5px;
+    }
+
+    .info {
+        padding: 0 10px 0 10px;
+        border-radius: 10px;
+        background-color: rgb(232, 228, 228);
+        width: 83%;
+    }
+
+    .main {
+        font-weight: bold;
+    }
+
+    .card .profile {
+        padding: 5px;
+        background-color: #292c35;
+        border-radius: 10px;
+        width: 15%;
+    }
+
+    .card .profile img {
+        width: 90%;
+        height: 90%;
+    }
+
+    .year_box_container {
+        width: 100%;
+        display: grid;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
+
+    .year_box {
+        background-color: rgb(232, 228, 228);
+        color: black;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .year_box .inner_year_box::before {
+        content: " ";
+        position: absolute;
+        background-color: #DCA352;
+        width: 5%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+    }
+
+    .notice_container {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: rgb(232, 228, 228);
+        text-align: center;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notice_container .notice_head {
+        width: 100%;
+        text-align: center;
+        background-color: #292C35;
+        color: #DCAE52;
+        padding: 10px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .notice_container .notice_block_container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notice_container .notice_block_container div {
+        background-color: white;
+        width: 100%;
+        border-radius: 20px;
+        padding: 15px;
+    }
+
+    .card_container_2 {
+        background-color: rgb(232, 228, 228);
+        border-radius: 10px;
+        margin: auto;
+        display: flex;
+        padding: 12px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card_container_2 .head {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #292c35;
+        color: #DCA352;
+        font-size: larger;
+        height: 100%;
+        margin: 0 5px;
+    }
+
+    .card_container_2 .body {
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .body td {
+        padding: 5px;
+    }
+
+    .card_container_2 .body tr>td:first-child {
+        font-size: large;
+        font-weight: bolder;
+    }
+
+    .attendance_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .attendance_head {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        background-color: #292C35;
+        color: goldenrod;
+    }
+
+    .head_first,
+    .head_second {
+        padding: 10px;
+        text-align: center;
+        font-weight: 800;
+        font-size: large;
+    }
+
+    .head_first {
+        font-size: x-large;
+        font-weight: 900;
+    }
+
+    .attendance_body {
+        width: 100%;
+        background-color: white;
+        overflow-y: scroll;
+    }
+
+    .attendance_body table {
+        width: 100%;
+        text-align: center;
+    }
+
+    .attendance_body table {
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        border-collapse: collapse;
+    }
+
+    .attendance_body table th {
+        padding: 5px;
+    }
+
+    .attendance_body table td {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 5px;
+    }
+
+}

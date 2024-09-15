@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Year</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="page_container">
+        {{>section_left_side}}
+        <div class="card_container_2">
+            <div class="head">
+                B.Tech (Sessions 2023-24)
+            </div>
+            <div class="body">
+                <table class="table1">
+                    <tr>
+                        <td>Course</td>
+                        <td>B.Tech</td>
+                    </tr>
+                    <tr>
+                        <td>Branch</td>
+                        <td>Computer Science Engineering</td>
+                    </tr>
+                </table>
+                <table class="table2">
+                    <tr>
+                        <td>Semester</td>
+                        <td>Sixth</td>
+                    </tr>
+                    <tr>
+                        <td>Day</td>
+                        <td id="date2">26-05-2024</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="attendance_container">
+            <div class="attendance_head">
+                <div class="head_first">
+                    Attendance Record
+                </div>
+                <div class="head_second">
+                    <div id="day">Saturday</div>
+                    <div id="date">26-05-2024 </div>
+                </div>
+            </div>
+            <div class="attendance_body">
+                <table id="attendance_table">
+                    <thead>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Mark</th>
+                        <th>Time</th>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        {{>notice_container}}        
+    </div>
+</body>
+<script src="/js/fAI.js">
+</script>
+
+</html>

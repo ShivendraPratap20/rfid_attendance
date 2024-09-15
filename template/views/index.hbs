@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IET</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	{{>header}}
+	<div class="page_container">
+		{{>section_left_side}}
+		<section class="card">
+			<div class="info">
+				<table>
+					<tr>
+						<td>Name</td>
+						<td class="main">{{data.name}}</td>
+					</tr>
+					<tr>
+						<td>Post</td>
+						<td class="main">Teacher</td>
+					</tr>
+					<tr>
+						<td>Phone:</td>
+						<td class="main">{{data.mobileNo}}</td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td class="main">{{data.emailID}}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="profile">
+				<img src="./img/office-man.png" alt="">
+			</div>
+		</section>
+		{{>year_box_container}}
+		{{>notice_container}}
+	</div>
+</body>
+</html>
